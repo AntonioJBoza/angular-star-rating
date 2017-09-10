@@ -11,9 +11,9 @@
           (mouseenter)="onStarHover(star)"
           *ngFor="let star of stars"
           (click)="onStarClicked(star)">
-            <i *ngIf="!svgVisible()" class="star-empty {{classEmpty}}"></i>
-            <i *ngIf="!svgVisible()" class="star-empty {{classHalf}}"></i>
-            <i *ngIf="!svgVisible()" class="star-filled {{classFilled}}"></i>
+            <i *ngIf="!svgVisible()" class="fa-star-o {{classEmpty}}"></i>
+            <i *ngIf="!svgVisible()" class="fa-star-half-o {{classHalf}}"></i>
+            <i *ngIf="!svgVisible()" class="fa-star {{classFilled}}"></i>
             <svg *ngIf="svgVisible()" class="star-empty default-star-empty-icon">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" [attr.xlink:href]="pathEmpty"></use>
             </svg>
